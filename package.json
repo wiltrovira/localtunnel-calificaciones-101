@@ -1,0 +1,45 @@
+{
+  "name": "localtunnel-calificaciones-101",
+  "version": "0.1.0",
+  "description": "Calcular promedio de calificaciones. Usar localtunnel para publicar y hacer pruebas",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel localtunnel src",
+    "start": "node index.js",
+    "src": "node index.js",
+    "test": "nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiltrovira/localtunnel-calificaciones-101.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "calificaciones",
+    "array",
+    "objeto",
+    "promedio",
+    "funciones",
+    "localtunnel"
+  ],
+  "author": "Wilt Rovira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiltrovira/localtunnel-calificaciones-101/issues"
+  },
+  "homepage": "https://github.com/wiltrovira/localtunnel-calificaciones-101#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.8.3",
+    "nodeunit": "^0.11.1",
+    "npm-run-all": "^4.0.2"
+  }
+}
